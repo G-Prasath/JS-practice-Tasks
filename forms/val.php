@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </body>
         </html>');
 
-            $sendgrid = new \SendGrid('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');
+            $sendgrid = new \SendGrid('');
 
             if ($sendgrid->send($email)) {
                 echo 'https://dhanamroofings.com/thank-you.php';

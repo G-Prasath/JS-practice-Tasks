@@ -53,7 +53,7 @@ tr:nth-child(even) {
 </body>
 </html>');
 
-    $sendgrid = new \SendGrid('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');
+    $sendgrid = new \SendGrid('');
 
     if($sendgrid->send($email)){
         header('location: https://www.mekarkconstruction.com/thank-you.php');
