@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8));
+    min-width: 100vh;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+
+
+/* ------------ Header Section -------------  */
+.todo__Header{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    margin: 10px 0px;
+    color: orange;
+}
+.todo__Header > h3{
+    font-size: 22px;
+}
+.todo__Header > ion-icon{
+    font-size: 22px;
+    margin-left: 10px;
+    cursor: pointer;
+} 
+
+
+/* ------------- Input Section --------------  */
+.todo__Box{
+    padding: 20px;
+    background-color: #fff;
+    width: 40%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+}
+.todo__inputs{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.todo__inputs > input{
+    border: 1px solid orange;
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    outline: none;
+    padding: 0px 110px 0px 20px;
+}
+.todo__inputs > .btn{
+    position: absolute;
+    outline: none;
+    background-color: orange;
+    width: 90px;
+    height: 40px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    right: 1%;
+}
+.placeholder-color::-webkit-input-placeholder {
+    color: red;
+    font-weight: bold;
+ }
+
+/* ----------- List Section --------------  */
+
+.todo__list{
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+.todo__list > li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0;
+    position: relative;
+}
+.todo__list > li::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url('./circle.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.todo__list > li > p{
+    margin-left: 30px;
+}
+.todo__list > li.checked{
+    text-decoration: line-through;
+}
+.todo__list > li.checked::before{
+    background-image: url('./tick-icon.png');
+}
+
+.todo__list > li span{
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.todo__list > li span:hover{
+    background-color: #eae5e5;
+    transition: all .3s ease;
+}
+
+
+/* .todo__list > li:not(:last-child){
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 15px -20px;
+}
+.todo__list  .circle, .close{
+    font-size: 20px;
+    cursor: pointer;
+}
+.todo__list  .circle{
+    color: orange;
+}
+.todo__list  .close{
+    color: red;
+}
+.todo__list > li p{
+    width: 100%;
+    position: relative;
+    margin: 10px 20px;
+}
+.cruash{
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    height: 2px;
+    top: 50%;
+} */

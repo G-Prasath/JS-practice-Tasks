@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="task.css" />
+</head>
+
+<body>
+
+    <div class="todo__Box">
+        <div class="todo__Header">
+            <h3>To-Do List</h3>
+            <ion-icon name="reader-outline"></ion-icon>
+        </div>
+        <div class="todo__inputs">
+            <input type="text" name="task" id="input_btn" placeholder="Enter Your Task" />
+            <button type="submit" class="btn" onclick="addTask()">Submit</button>
+        </div>
+
+
+        <ul class="todo__list">
+
+        </ul>
+
+
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="task.js"></script>
+</body>
+
+</html>
